@@ -1,0 +1,109 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    background-color: #8A2BE2;
+    margin: 0;
+    padding: 15px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.formulario {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.formulario h1, h3, h5 {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.formulario h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.formulario h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.formulario h5 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.formulario input {
+    width: 95%;
+}
+
+.buttons {
+    margin: 10px 0 0 0;
+    width: 13%;
+    padding: 10px;
+    background-color: #8A2BE2;
+    border-radius: 7px;
+}
+
+.buttons button {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px
+}
+
+.content {
+    margin: 20px;
+}
+
+.content table {
+    width: 100%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+.content table:last-child {
+    border-bottom: 1px solid black;
+}
+
+.content table thead {
+    background-color: #CCCCCC;
+}
+
+.content table thead th:last-child {
+    width: 80%;
+    text-align: end;
+    padding-right: 15px;
+}
+
+.content table thead th {
+    padding: 5px;
+}
+
+#tbody {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: unset;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tbody tr td:last-child {
+    width: 80%;
+    text-align: end;
+    padding-right: 15px;
+}
+
+#tbody tr td {
+    padding: 5px;
+}
