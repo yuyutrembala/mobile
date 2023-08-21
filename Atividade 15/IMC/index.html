@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo de Exercício</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function calcularIMC() {
+            var formulario = document.getElementById("formulario");
+            var kilos = +formulario.kilos.value;
+            var metros = +formulario.metros.value;
+            var centimetros = +formulario.centimetros.value;
+            var altura = (metros * 100 + centimetros) / 100;
+            var imc = kilos / (altura * altura);
+            formulario.imc.value = imc.toFixed(2);
+           
+            if (imc < 20) {
+                alert('Você está abaixo do peso!');
+            } else if (imc <= 25) {
+                alert("Peso Ideal");
+            } else if (imc <= 30) {
+                alert("Sobrepeso");
+            } else if (imc <= 35) {
+                alert("Obesidade Moderada");
+            } else if (imc <= 40) {
+                alert("Obesidade Severa");
+            } else if (imc <= 50) {
+                alert("Obesidade Mórbida");
+            } else {
+                alert('Gordo');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Calculo IMC</legend>
+            <label for="kilos">Kilos:</label>
+            <input name="kilos" type="text" />
+   
+            <label for="metros">metros:</label>
+            <input name="metros" type="text" />
+   
+            <label for="centimetros">centimetros:</label>
+            <input name="centimetros" type="text" />
+   
+            <label for="imc">IMC:</label>
+            <input name="imc" type="text" disabled="disabled" />
+           
+            <button type="button" onclick="calcularIMC();">Calcular</button>
+        </fieldset>
+    </form>
+</body>
+</html>
